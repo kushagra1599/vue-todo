@@ -2,6 +2,15 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
+  ssr: false,
+  
+  // Configure the app for GitHub Pages
+  app: {
+    // Replace 'your-repo-name' with your actual repository name
+    baseURL: process.env.NODE_ENV === 'production' ? '/your-repo-name/' : '/',
+    // This helps with resource loading
+    buildAssetsDir: '/assets/'
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   plugins: [
