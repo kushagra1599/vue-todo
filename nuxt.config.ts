@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   // Configure the app for GitHub Pages
   app: {
     // Replace 'your-repo-name' with your actual repository name
-    baseURL: process.env.NODE_ENV === 'production' ? '/vue-todo/' : '/',
+    baseURL: '/vue-todo/',
     // This helps with resource loading
     buildAssetsDir: '/assets/'
   },
