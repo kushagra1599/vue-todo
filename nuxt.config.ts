@@ -45,6 +45,9 @@ export default defineNuxtConfig({
   ],
   pinia:{
     storeDirs:['./stores/**']
+  },
+  nitro:{
+    preset:'github-pages'
   }
 })
 
