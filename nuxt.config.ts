@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     // Replace 'your-repo-name' with your actual repository name
     baseURL: '/vue-todo/',
     // This helps with resource loading
-    buildAssetsDir: '/assets/'
+    buildAssetsDir: '/_nuxt/'
   },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
